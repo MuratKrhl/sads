@@ -1,0 +1,34 @@
+{
+  "name": "bmw-portal-project-management-dashboard",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@progress/kendo-react-charts": "^14.2.0",
+    "@types/d3": "^7.4.3",
+    "ag-charts-enterprise": "^13.1.0",
+    "ag-charts-react": "^13.1.0",
+    "d3": "^7.9.0",
+    "hammerjs": "^2.0.8",
+    "lodash": "^4.17.21",
+    "lucide-react": "^0.577.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-icons": "^5.6.0",
+    "recharts": "^3.2.1",
+    "scichart": "^5.0.178",
+    "scichart-react": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}

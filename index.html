@@ -11,6 +11,20 @@
       tailwind.config = {
         theme: {
           extend: {
+            animation: {
+              marquee: 'marquee 25s linear infinite',
+              marquee2: 'marquee2 25s linear infinite',
+            },
+            keyframes: {
+              marquee: {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-100%)' },
+              },
+              marquee2: {
+                '0%': { transform: 'translateX(100%)' },
+                '100%': { transform: 'translateX(0%)' },
+              },
+            },
             fontFamily: {
               sans: ['Nunito', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"'],
             },
@@ -38,8 +52,6 @@
         font-family: 'Nunito', sans-serif !important;
       }
     </style>
-
-<link rel="stylesheet" href="/index.css">
   <script type="importmap">
 {
   "imports": {
@@ -52,9 +64,10 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-CX4iSU55.js"></script>
+<link rel="stylesheet" href="/index.css">
 </head>
   <body class="bg-gray-50 text-gray-800">
     <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
   </body>
 </html>
